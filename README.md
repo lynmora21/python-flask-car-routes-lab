@@ -53,6 +53,23 @@ Build routes for a car company:
 - Push commit history to GitHub periodically and when the lab is complete
 
 ---
+## Application Routes
+
+This Flask application provides routes for the Flatiron Cars car catalog.
+
+## Available Routes
+
+- / — Returns a welcome message for Flatiron Cars.
+
+- /<model> — Checks whether a requested car model is included in the existing fleet.
+
+If the model exists, the application returns:
+
+Flatiron {model} is in our fleet!
+
+If the model does not exist, the application returns:
+
+No models called {model} exists in our catalog.
 
 ## Tools and Resources
 
@@ -153,3 +170,7 @@ Once all tests are passing and code is pushed to the `main` branch:
 - Application passes all test suites
 - `/` route is created and returns correctly
 - `/<model>` route is created and returns correctly
+
+## Completed Application
+
+![Flatiron Cars route](screenshots/car-routes.png)
